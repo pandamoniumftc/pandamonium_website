@@ -5,15 +5,14 @@ import HelloWorld from "./components/HelloWorld.vue";
 
 <template>
   <header>
-  
+    <!--
     <div class="wrapper">
-      
-
-      <nav>
+        <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
+    -->
   </header>
 
   <RouterView />
