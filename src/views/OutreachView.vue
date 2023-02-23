@@ -13,4 +13,5 @@ import TheWelcome from "../components/TheWelcome.vue";
     <section id="outreach">
         <h2>we did outreach!</h2>
     </section>
+    
 </template>
