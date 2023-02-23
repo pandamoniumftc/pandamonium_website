@@ -12,7 +12,7 @@ defineProps({
 </script>
 
 <template>
-  <img src={{imgPath}}>
+  <img src={{ imgPath }}>
   <p>{{msg}}</p>
 </template>
 
