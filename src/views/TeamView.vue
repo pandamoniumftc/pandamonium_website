@@ -14,7 +14,7 @@ import TheWelcome from "../components/TheWelcome.vue";
     <section id="business">
         <h2>The people leading our community outreach and our fundraising.</h2>
         
-        <TeamMemberBio imgPath="../../public/person-placeholder.png" msg=
+        <TeamMemberBio imgPath="../assets/person-placeholder.png" msg=
             "My name is Clare and this is my second year in FTC. When I grow up, I want to be a neurologist. 
             First helps me prepare for my future careers because I learn skills universal to all careers like 
             leadership, communication, and time management. One thing I accomplished while on my team was I 
@@ -23,7 +23,7 @@ import TheWelcome from "../components/TheWelcome.vue";
             learned a lot about organization/management along the way."
         ></TeamMemberBio>
 
-        <TeamMemberBio imgPath="../../public/person-placeholder.png" msg=
+        <TeamMemberBio imgPath="../assets/person-placeholder.png" msg=
             "Hi! My name is Meera and I am a sophomore at Carlsbad High School. I have been in FIRST 
             since I was in fourth grade with 5 years of FLL experience and now two years in FTC. 
             Using the skills I have acquired from FTC, when I grow up I hope to continue empowering 
@@ -39,7 +39,7 @@ import TheWelcome from "../components/TheWelcome.vue";
 
         </p>
 
-        <TeamMemberBio imgPath="../../public/person-placeholder.png" msg=
+        <TeamMemberBio imgPath="../assets/person-placeholder.png" msg=
             "I came up with the idea of organizing a community 5k to fundraise for our team's goal of 
             creating workshops for girls in STEM. I knew that we needed to raise money in order to make 
             the workshops completely free for the students and the library we were hosting them at. 
@@ -55,7 +55,7 @@ import TheWelcome from "../components/TheWelcome.vue";
     <section id="hardware">
         <h2>The people who build our robot</h2>
 
-        <TeamMemberBio imgPath="../../public/person-placeholder.png" msg=
+        <TeamMemberBio imgPath="../assets/person-placeholder.png" msg=
             "Jacob is a hardware lead and has been participating in the First Tech Challenge for two seasons. 
             He helps design, CAD, manufacture, and build our teams robot. 
             He hopes to one day become a biomedical engineer, 
@@ -64,7 +64,7 @@ import TheWelcome from "../components/TheWelcome.vue";
             which can later be applied to this career."
         ></TeamMemberBio>
 
-        <TeamMemberBio imgPath="../../public/person-placeholder.png" msg=
+        <TeamMemberBio imgPath="../assets/person-placeholder.png" msg=
             "My name is Stephanie Luong and I am in 8th grade, this is my first year doing FTC. When I grow up 
             I want to do something in the engineering field. FIRST has helped me get closer to my goals by 
             giving me the opportunity to learn about how to work better in a team, learn to problem solve, 
@@ -76,7 +76,7 @@ import TheWelcome from "../components/TheWelcome.vue";
     <section id="software">
         <h2>The shadow people who make our robot move</h2>
 
-        <TeamMemberBio imgPath="../../public/person-placeholder.png" msg=
+        <TeamMemberBio imgPath="../assets/person-placeholder.png" msg=
             "Hi! My name is Jack and I am a senior who goes to Sage Creek. I have been in FIRST for about 5 years 
             which has helped me immensly in my goals of becoming a software engineer. The thing that interests me 
             most about CS is machine learning and AI. This inspired me to learn more about math and machine learning
@@ -84,7 +84,7 @@ import TheWelcome from "../components/TheWelcome.vue";
             places on our robot and is used to automatically intake game elements."
         ></TeamMemberBio>
 
-        <TeamMemberBio imgPath="../../public/person-placeholder.png" msg=
+        <TeamMemberBio imgPath="../assets/person-placeholder.png" msg=
             "Hey! I'm Ethan Luong, and I'm a sophomore who goes to Sage Creek High School. 
             I have been in FTC for almost 2 years as a part of the software department 
             (although my first year was more business than software). 
@@ -98,7 +98,7 @@ import TheWelcome from "../components/TheWelcome.vue";
             so we can accurately use the camera without distortion."
         ></TeamMemberBio>
 
-        <img src="../../public/person-placeholder.png">
+        <img src="../assets/person-placeholder.png">
     </section>
     <hr/>
 </template>
