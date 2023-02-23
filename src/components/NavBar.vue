@@ -1,7 +1,7 @@
 <template>
     <nav>
         <ul>
-        <li><router-link to="index.html">About</router-link></li>
+        <li><router-link to="/">About</router-link></li>
         <li><router-link to="/team">Team</router-link></li>
         <li><router-link to="outreach.html">Outreach</router-link></li>
         </ul>
