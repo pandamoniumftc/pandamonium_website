@@ -89,7 +89,7 @@ import TheWelcome from "../components/TheWelcome.vue";
             places on our robot and is used to automatically intake game elements.
         </p>
 
-        <img src="person-placeholder.png">
+        <img src="person-placeholder.png", width="512", height="512">
         <p>
             Hey! I’m Ethan Luong, and I’m a sophomore who goes to Sage Creek High School. 
             I have been in FTC for almost 2 years as a part of the software department 
