@@ -6,7 +6,7 @@ import TheWelcome from "../components/TheWelcome.vue";
 <template>
     <header>
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-        <h1><strong>We are team Pandamonium</strong></h1>
+        <h1><strong>We are Team Pandamonium</strong></h1>
     </header>
     <NavBar></NavBar>
     <hr/>
