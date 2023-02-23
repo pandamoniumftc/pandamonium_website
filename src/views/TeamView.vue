@@ -97,6 +97,8 @@ import TheWelcome from "../components/TheWelcome.vue";
             camera calibration application that we can use to remove any distortion in the camera, 
             so we can accurately use the camera without distortion."
         ></TeamMemberBio>
+
+        <img src="../../public/person-placeholder.png">
     </section>
     <hr/>
 </template>
