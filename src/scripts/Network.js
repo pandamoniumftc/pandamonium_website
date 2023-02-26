@@ -18,7 +18,7 @@ export class Network {
         let epochError = 0;
 
         for (let sample = 0; sample < this.xTrain.length; sample++) {
-            ff = this.xTrain[sample]
+            let ff = this.xTrain[sample]
 
             ff = this.predict(ff)
 
