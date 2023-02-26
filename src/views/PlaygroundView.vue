@@ -20,13 +20,18 @@ import MSE from "../scripts/MSE"
     </section>
     <hr/>
 
-    <div @click="click">test</div>
-    
+    <section class="network-structure"> 
+        <div>
 
+        </div>
+    </section>
+    
+    
 </template>
 
 <script>
     let layers = [
+        new Dense(2, 2),
         new Dense(2, 1)
     ]
 
