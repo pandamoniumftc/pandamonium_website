@@ -1,4 +1,4 @@
-export class Loss {
+class Loss {
 
     constructor() {
         if (this.constructor == Layer) {
@@ -14,3 +14,5 @@ export class Loss {
         throw new Error("method 'backPropagate()' must be implemented");
     }
 }
+
+export default Loss

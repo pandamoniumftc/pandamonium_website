@@ -1,4 +1,4 @@
-export class Layer {
+class Layer {
 
     constructor() {
         if (this.constructor == Layer) {
@@ -14,3 +14,5 @@ export class Layer {
         throw new Error("method 'backPropagate()' must be implemented");
     }
 }
+
+export default Layer

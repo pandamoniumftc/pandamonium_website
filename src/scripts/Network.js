@@ -1,4 +1,4 @@
-export class Network {
+class Network {
     constructor(network, xTrain, yTrain, lRate, loss) {
         this.network = network
         this.xTrain = xTrain
@@ -43,3 +43,5 @@ export class Network {
         return ff
     }
 }
+
+export default Network
