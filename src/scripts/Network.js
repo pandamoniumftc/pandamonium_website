@@ -24,7 +24,7 @@ export class Network {
 
             epochError += this.loss.feedForward(ff, this.yTrain[sample])
 
-            let gradient = loss.backPropagate(ff, this.yTrain[sample])
+            let gradient = this.loss.backPropagate(ff, this.yTrain[sample])
 
             for (let layer = this.network.length - 1; layer >= 0; layer--) {
                 gradient = this.network[layer].backPropagate(gradient, this.lRate)
