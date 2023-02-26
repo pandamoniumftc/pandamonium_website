@@ -32,7 +32,7 @@ export class Network {
         }
 
         this.epoch++
-    
+        console.log("epoch " + this.epoch + " complete");
 
         this.epochErrors.push(epochError)
     }
