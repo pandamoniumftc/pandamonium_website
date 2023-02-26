@@ -62,7 +62,7 @@ import MSE from "../scripts/MSE"
             },
             start() {
                 network.isRunning = true;
-                intervalID = setInterval(network.train, 0)
+                intervalID = window.setInterval(network.train, 0)
 
                 hasStartedFlag = true;
             },
@@ -71,7 +71,7 @@ import MSE from "../scripts/MSE"
 
                 network.isRunning = false
 
-                clearInterval(intervalID)
+                window.clearInterval(intervalID)
             }
             
         }
