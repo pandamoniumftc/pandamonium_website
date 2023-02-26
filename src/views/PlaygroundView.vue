@@ -59,10 +59,12 @@ import MSE from "../scripts/MSE"
             },
             pause() {
                 network.isRunning = false
+
+                clearTimeout(timeoutID)
             },
             start() {
                 network.isRunning = true;
-                setTimeout(network.train, 0)
+                var timeoutID = setTimeout(network.train, 0)
             }
         }
         
