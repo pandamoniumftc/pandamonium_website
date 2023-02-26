@@ -46,6 +46,9 @@ import MSE from "../scripts/MSE"
         new MSE()
     )
 
+    let intervalID;
+    let hasStartedFlag = false;
+
     export default {
         methods: {
             step() {
@@ -57,15 +60,20 @@ import MSE from "../scripts/MSE"
                     console.log("given : " + network.xTrain[i] + ", outputted : " + network.predict(network.xTrain[i]))
                 }
             },
+            start() {
+                network.isRunning = true;
+                intervalID = setInterval(network.train, 0)
+
+                hasStartedFlag = true;
+            },
             pause() {
+                if (!hasStartedFlag) return
+
                 network.isRunning = false
 
                 clearInterval(intervalID)
-            },
-            start() {
-                network.isRunning = true;
-                var intervalID = setInterval(network.train, 0)
             }
+            
         }
         
     }
