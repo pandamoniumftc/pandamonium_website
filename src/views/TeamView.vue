@@ -1,7 +1,6 @@
 <script setup>
 import NavBar from "../components/NavBar.vue";
-import TeamMemberBio from "../components/TeamMemberBio.vue";
-import TheWelcome from "../components/TheWelcome.vue";
+
 </script>
 
 <template>
