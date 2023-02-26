@@ -1,4 +1,4 @@
-class Dense extends Layer {
+export class Dense extends Layer {
     constructor(inputLen, outputLen) {
         this.inputLen = inputLen
         this.outputLen = outputLen

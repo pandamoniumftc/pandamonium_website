@@ -1,4 +1,4 @@
-class Network {
+export class Network {
     constructor(network, xTrain, yTrain, lRate, loss) {
         this.network = network
         this.xTrain = xTrain

@@ -1,6 +1,6 @@
 import { Loss } from "./Loss";
 
-class MSE extends Loss {
+export class MSE extends Loss {
     constructor() {}
 
     feedForward(actual, expected) {

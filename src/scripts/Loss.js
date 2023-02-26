@@ -1,4 +1,4 @@
-class Loss {
+export class Loss {
 
     constructor() {
         if (this.constructor == Layer) {

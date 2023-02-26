@@ -1,4 +1,4 @@
-class Layer {
+export class Layer {
 
     constructor() {
         if (this.constructor == Layer) {
