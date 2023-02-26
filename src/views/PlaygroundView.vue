@@ -62,12 +62,9 @@ import MSE from "../scripts/MSE"
             },
             start() {
                 network.isRunning = true;
+                setTimeout(network.train, 0)
             }
         }
         
     }
-</script>
-
-<script>
-    network.train()
 </script>
