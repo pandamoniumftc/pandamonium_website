@@ -52,6 +52,4 @@ import MSE from "../scripts/MSE"
         }
         
     }
-
-    
 </script>
