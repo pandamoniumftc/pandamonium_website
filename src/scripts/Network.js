@@ -30,6 +30,8 @@ export class Network {
                 gradient = this.network[layer].backPropagate(gradient, this.lRate)
             }
         }
+
+        this.epoch++
     
 
         this.epochErrors.push(epochError)

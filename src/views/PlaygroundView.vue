@@ -60,11 +60,11 @@ import MSE from "../scripts/MSE"
             pause() {
                 network.isRunning = false
 
-                clearTimeout(timeoutID)
+                clearInterval(intervalID)
             },
             start() {
                 network.isRunning = true;
-                var timeoutID = setTimeout(network.train, 0)
+                var intervalID = setInterval(network.train, 0)
             }
         }
         
