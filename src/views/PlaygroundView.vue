@@ -24,7 +24,7 @@ import MSE from "../scripts/MSE"
         <div>
             <button @click="start">Start</button>
             <button @click="pause">Pause</button>
-            <button @click="start">Step</button>
+            <button @click="step">Step</button>
             
         </div>
     </section>
