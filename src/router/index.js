@@ -21,13 +21,19 @@ const router = createRouter({
       path: "/team",
       name: "team",
 
-      component: () => import("../views/TeamView.vue")
+      component: () => import("../views/TeamView.vue"),
     },
     {
       path: "/outreach",
       name: "outreach",
 
-      component: () => import("../views/OutreachView.vue")
+      component: () => import("../views/OutreachView.vue"),
+    },
+    {
+      path: "/playground",
+      name: "playground",
+
+      component: () => import("../views/PlaygroundView.vue"),
     }
   ],
 });
