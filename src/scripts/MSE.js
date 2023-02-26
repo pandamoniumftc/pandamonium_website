@@ -21,7 +21,7 @@ export class MSE {
             throw new Error("expected and actual did not match in length")
         }
 
-        out = new Array(expected.length)
+        let out = new Array(expected.length)
 
         for (let i = 0; i < out.length; i++) {
             out[i] = (2.0 / expected.length) * (actual[i] - expected[i])
