@@ -1,6 +1,4 @@
-import { Layer } from "./Layer";
-
-export class Dense extends Layer {
+export class Dense {
     constructor(inputLen, outputLen) {
         this.inputLen = inputLen
         this.outputLen = outputLen
