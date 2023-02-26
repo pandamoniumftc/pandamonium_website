@@ -22,7 +22,10 @@ import MSE from "../scripts/MSE"
 
     <section class="network-structure"> 
         <div>
-
+            <button @click="start">Start</button>
+            <button @click="pause">Pause</button>
+            <button @click="start">Step</button>
+            
         </div>
     </section>
     
@@ -30,12 +33,12 @@ import MSE from "../scripts/MSE"
 </template>
 
 <script>
-    let layers = [
+    var layers = [
         new Dense(2, 2),
         new Dense(2, 1)
     ]
 
-    let network = new Network(
+    var network = new Network(
         layers,
         [[1, 2], [2, 1]],
         [[7], [5]],
@@ -45,7 +48,7 @@ import MSE from "../scripts/MSE"
 
     export default {
         methods: {
-            click() {
+            step() {
                 network.isRunning = true;
                 network.train()
                 network.isRunning = false;
@@ -53,8 +56,18 @@ import MSE from "../scripts/MSE"
                 for (let i = 0; i < network.xTrain.length; i++) {
                     console.log("given : " + network.xTrain[i] + ", outputted : " + network.predict(network.xTrain[i]))
                 }
+            },
+            pause() {
+                network.isRunning = false
+            },
+            start() {
+                network.isRunning = true;
             }
         }
         
     }
+</script>
+
+<script>
+    network.train()
 </script>
