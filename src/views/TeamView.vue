@@ -10,6 +10,7 @@ import TheWelcome from "../components/TheWelcome.vue";
         <h1><strong>We are team Pandamonium</strong></h1>
     </header>
     <NavBar></NavBar>
+    <!---
     <hr/>
     <section id="business">
         <h2>The people leading our community outreach and our fundraising.</h2>
@@ -101,4 +102,5 @@ import TheWelcome from "../components/TheWelcome.vue";
         <img src="../assets/person-placeholder.png">
     </section>
     <hr/>
+    -->
 </template>
