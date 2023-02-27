@@ -20,14 +20,14 @@
         align-items: center;
     }
 
-    span {
+    div span {
         background-color: #231f20; /* light gray */
         padding: 20px;
         color: #f2f2f2;
         text-align: center;
     }
       
-    span h1 {
+    div h1 {
         margin: 0;
         color: #f2f2f2; /* dark gray */
         font-size: 6em;
