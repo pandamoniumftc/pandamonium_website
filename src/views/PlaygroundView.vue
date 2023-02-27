@@ -50,6 +50,11 @@ import Header from "../components/Header.vue";
     let intervalID;
     let hasStartedFlag = false;
 
+
+    function train(net) {
+        net.train()
+    }
+
     export default {
     methods: {
         step() {
@@ -62,15 +67,18 @@ import Header from "../components/Header.vue";
         },
         start() {
             network.isRunning = true;
-            intervalID = window.setInterval(network.train, 1);
+            console.log("start attempted")
+            intervalID = window.setInterval(train, 0, network);
             hasStartedFlag = true;
         },
         pause() {
+            console.log("pause attempted")
             if (!hasStartedFlag)
                 return;
             network.isRunning = false;
             window.clearInterval(intervalID);
-        }
+        },
+        
     },
     components: { Header }
 }
