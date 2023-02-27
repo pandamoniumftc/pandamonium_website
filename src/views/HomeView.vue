@@ -45,6 +45,6 @@ import TheWelcome from "../components/TheWelcome.vue";
     }
 
     #about p {
-        width: 500 px;
+        width: 300 px;
     }
 </style>

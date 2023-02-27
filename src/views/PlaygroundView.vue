@@ -4,13 +4,14 @@ import TheWelcome from "../components/TheWelcome.vue";
 import Network from "../scripts/Network"
 import Dense from "../scripts/Dense"
 import MSE from "../scripts/MSE"
+import Header from "../components/Header.vue";
 
 </script>
 
 <template>
     <header>
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-        <h1><strong>We are Team Pandamonium</strong></h1>
+        <Header></Header>
     </header>
     <NavBar></NavBar>
     <hr/>
@@ -50,31 +51,27 @@ import MSE from "../scripts/MSE"
     let hasStartedFlag = false;
 
     export default {
-        methods: {
-            step() {
-                network.isRunning = true;
-                network.train()
-                network.isRunning = false;
-
-                for (let i = 0; i < network.xTrain.length; i++) {
-                    console.log("given : " + network.xTrain[i] + ", outputted : " + network.predict(network.xTrain[i]))
-                }
-            },
-            start() {
-                network.isRunning = true;
-                intervalID = window.setInterval(network.train, 0)
-
-                hasStartedFlag = true;
-            },
-            pause() {
-                if (!hasStartedFlag) return
-
-                network.isRunning = false
-
-                window.clearInterval(intervalID)
+    methods: {
+        step() {
+            network.isRunning = true;
+            network.train();
+            network.isRunning = false;
+            for (let i = 0; i < network.xTrain.length; i++) {
+                console.log("given : " + network.xTrain[i] + ", outputted : " + network.predict(network.xTrain[i]));
             }
-            
+        },
+        start() {
+            network.isRunning = true;
+            intervalID = window.setInterval(network.train, 1);
+            hasStartedFlag = true;
+        },
+        pause() {
+            if (!hasStartedFlag)
+                return;
+            network.isRunning = false;
+            window.clearInterval(intervalID);
         }
-        
-    }
+    },
+    components: { Header }
+}
 </script>

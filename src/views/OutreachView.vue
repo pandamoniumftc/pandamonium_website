@@ -1,4 +1,5 @@
 <script setup>
+import Header from "../components/Header.vue";
 import NavBar from "../components/NavBar.vue";
 import TheWelcome from "../components/TheWelcome.vue";
 </script>
@@ -6,7 +7,7 @@ import TheWelcome from "../components/TheWelcome.vue";
 <template>
     <header>
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-        <h1><strong>We are Team Pandamonium</strong></h1>
+        <Header></Header>
     </header>
     <NavBar></NavBar>
     <hr/>
