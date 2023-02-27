@@ -1,8 +1,8 @@
 <template>
     <div>
-        <span><img src="../assets/panda-logo-header.png" id="logo"></span>
-        <span><h1>PANDAMONIUM</h1></span>
-        <span><img src="../assets/first-logo-header.png" id="first"></span>
+        <img src="../assets/panda-logo-header.png" id="logo">
+        <h1 id="title">PANDAMONIUM</h1>
+        <img src="../assets/first-logo-header.png" id="first">
     </div>
     
 </template>
@@ -11,25 +11,21 @@
     #logo {
         width: 30px;
         height: 30px;
-        align-items: center;
     }
 
     #first {
         width: 30px;
         height: 30px;
-        align-items: center;
     }
 
-    div span {
+    div {
         background-color: #231f20; /* light gray */
         padding: 20px;
         color: #f2f2f2;
         text-align: center;
     }
       
-    div h1 {
-        margin: 0;
-        color: #f2f2f2; /* dark gray */
-        font-size: 6em;
+    #logo, #title, #first {
+        display: inline-block;
     }
 </style>
