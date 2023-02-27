@@ -8,13 +8,13 @@
 </template>
 
 <style scoped>
-    img #logo {
+    #logo {
         width: 30px;
         height: 30px;
         align-items: center;
     }
 
-    img first {
+    #first {
         width: 30px;
         height: 30px;
         align-items: center;
