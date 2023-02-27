@@ -5,6 +5,7 @@ import Network from "../scripts/Network"
 import Dense from "../scripts/Dense"
 import MSE from "../scripts/MSE"
 import Header from "../components/Header.vue";
+import NetworkVisual from "../components/NetworkVisual.vue";
 
 </script>
 
@@ -26,8 +27,8 @@ import Header from "../components/Header.vue";
             <button @click="start">Start</button>
             <button @click="pause">Pause</button>
             <button @click="step">Step</button>
-            
         </div>
+        <NetworkVisual :passedNetwork="passedNetwork"></NetworkVisual>
     </section>
     
     
@@ -56,6 +57,11 @@ import Header from "../components/Header.vue";
     }
 
     export default {
+    data() {
+        return {
+            passedNetwork: network
+        }
+    },
     methods: {
         step() {
             network.isRunning = true;
@@ -80,6 +86,6 @@ import Header from "../components/Header.vue";
         },
         
     },
-    components: { Header }
+    components: { Header, NetworkVisual }
 }
 </script>
