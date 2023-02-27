@@ -4,7 +4,7 @@
     <img src="../assets/first-logo-header.png" id="first">
 </template>
 
-<style scoped>
+<style>
 
     img #logo {
         width: 30px;
