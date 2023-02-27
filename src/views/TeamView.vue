@@ -1,6 +1,5 @@
 <script setup>
 import NavBar from "../components/NavBar.vue";
-
 </script>
 
 <template>
@@ -9,8 +8,8 @@ import NavBar from "../components/NavBar.vue";
         <h1><strong>We are team Pandamonium</strong></h1>
     </header>
     <NavBar></NavBar>
-    <!---
     <hr/>
+    <!--
     <section id="business">
         <h2>The people leading our community outreach and our fundraising.</h2>
         
@@ -98,7 +97,7 @@ import NavBar from "../components/NavBar.vue";
             so we can accurately use the camera without distortion."
         ></TeamMemberBio>
 
-        <img src="../assets/person-placeholder.png">
+
     </section>
     <hr/>
     -->
