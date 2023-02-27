@@ -19,7 +19,7 @@
     }
 
     template {
-        background-color: #333; /* light gray */
+        background-color: #231f20; /* light gray */
         padding: 20px;
         color: #f2f2f2;
         text-align: center;
@@ -28,6 +28,6 @@
     template h1 {
         margin: 0;
         color: #f2f2f2; /* dark gray */
-        font-size: 2em;
+        font-size: 6em;
     }
 </style>
