@@ -29,7 +29,7 @@
 
     div h1 {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-        font-size: 5em;
+        font-size: 4.5em;
     }   
       
     #logo, #title, #first {

@@ -13,7 +13,15 @@ import TheWelcome from "../components/TheWelcome.vue";
     <hr/>
     <section id="about">
         <h2>About Us</h2>
-        <p>Pandamonium Robotics is a First Tech Challenge team based in XYZ. We strive to inspire and motivate young people to become science and technology leaders by engaging them in exciting mentor-based programs that build STEM skills, that inspire innovation, and that foster well-rounded life capabilities.</p>
+        <p>
+            We are rookie Team Pandamonium #21303 based in Carlsbad, CA. Ranging from grades 8-12, we are a diverse team 
+            all with our each strengths and skills. Most of us were on an FLL team together for around four years but 
+            then we ventured off into 4 different schools at the start of last year. After seeing each other at competitions
+            and missing the team dynamic, we reformed the team and recruited new members. From there we developed a plan 
+            to fundraise, strategize, and secure the fundamentals to success as a team. Because of our hard work and 
+            determination, we are here today to share our story. 
+        </p>
+
     </section>
     <!--
     <section id="contact">
@@ -30,3 +38,10 @@ import TheWelcome from "../components/TheWelcome.vue";
     </section>
     -->
 </template>
+
+<style scoped>
+    #about h2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+</style>
