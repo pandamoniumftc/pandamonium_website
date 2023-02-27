@@ -40,8 +40,11 @@ import TheWelcome from "../components/TheWelcome.vue";
 </template>
 
 <style scoped>
-    #about h2 {
+    #about {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        
+    }
+
+    #about p {
+        width: 500 px;
     }
 </style>
