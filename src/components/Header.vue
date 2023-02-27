@@ -9,14 +9,14 @@
 
 <style scoped>
     #logo {
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
         justify-items: left;
     }
 
     #first {
-        width: 60px;
-        height: 60px;
+        height: 80px;
+        width: auto;
         justify-items: right;
     }
 
@@ -29,7 +29,7 @@
 
     div h1 {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-        font-size: 6em;
+        font-size: 5em;
     }   
       
     #logo, #title, #first {
