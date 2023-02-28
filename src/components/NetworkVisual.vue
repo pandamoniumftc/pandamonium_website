@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 v-for="(item, index) in passedNetwork.network" :key="index">{{ item }}</h1>
+        <h1 v-for="(item, index) in passedNetwork.network" :key="index" :id="'item-' + index">{{item}}</h1>
     </div>
 </template>
 
