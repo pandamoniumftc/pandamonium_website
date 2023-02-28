@@ -77,9 +77,9 @@ import NetworkVisual from "../components/NetworkVisual.vue";
             networkVisualizer = document.getElementById("networkVisualizer")
             
             for (let i = 0; i < networkVisualizer.layerH1s.length; i++) {
-                networkVisualizer.layerH1s[i].innerText = "im layer " + i;
+                networkVisualizer.layerH1s[i].textContent = "im layer " + i;
             }
-            
+
         },
         start() {
             network.isRunning = true;

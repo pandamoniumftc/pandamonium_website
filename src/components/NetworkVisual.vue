@@ -14,7 +14,7 @@
     },
     data() {
         layerH1s: {
-            let arr = new Array(passedNetwork.network.length)
+            let arr = new Array(this.passedNetwork.network.length)
 
             for (let i = 0; i < arr.length; i++) {
                 arr[i] = document.getElementById("item-" + i);
