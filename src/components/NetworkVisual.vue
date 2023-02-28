@@ -11,6 +11,19 @@
             type: Array,
             required: true
         }
+    },
+    data() {
+        layerH1s: {
+            let arr = new Array(passedNetwork.network.length)
+
+            for (let i = 0; i < arr.length; i++) {
+                arr[i] = document.getElementById("item-" + i);
+            }
+
+            return arr;
+        }
     }
+
+
     };
 </script>

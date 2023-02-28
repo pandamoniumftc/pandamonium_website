@@ -28,7 +28,9 @@ import NetworkVisual from "../components/NetworkVisual.vue";
             <button @click="pause">Pause</button>
             <button @click="step">Step</button>
         </div>
-        <NetworkVisual :passedNetwork="passedNetwork"></NetworkVisual>
+        <NetworkVisual :passedNetwork="passedNetwork" :id="networkVisualizer"></NetworkVisual>
+
+
     </section>
     
     
@@ -51,6 +53,7 @@ import NetworkVisual from "../components/NetworkVisual.vue";
     let intervalID;
     let hasStartedFlag = false;
 
+    let networkVisualizer;
 
     function train(net) {
         net.train()
@@ -70,6 +73,13 @@ import NetworkVisual from "../components/NetworkVisual.vue";
             for (let i = 0; i < network.xTrain.length; i++) {
                 console.log("given : " + network.xTrain[i] + ", outputted : " + network.predict(network.xTrain[i]));
             }
+
+            networkVisualizer = document.getElementById("networkVisualizer")
+            
+            for (let i = 0; i < networkVisualizer.layerH1s.length; i++) {
+                networkVisualizer.layerH1s[i].innerText = "im layer " + i;
+            }
+            
         },
         start() {
             network.isRunning = true;
