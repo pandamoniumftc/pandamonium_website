@@ -37,6 +37,10 @@ import NetworkVisual from "../components/NetworkVisual.vue";
 </template>
 
 <script>
+    import NetworkVisual from "../components/NetworkVisual.vue";
+import NetworkVisual from "../components/NetworkVisual.vue";
+import NetworkVisual from "../components/NetworkVisual.vue";
+    
     var layers = [
         new Dense(2, 2),
         new Dense(2, 1)
@@ -53,7 +57,7 @@ import NetworkVisual from "../components/NetworkVisual.vue";
     let intervalID;
     let hasStartedFlag = false;
 
-    let networkVisualizer;
+    let networkVisualizer = document.getElementById("networkVisualizer");
 
     function train(net) {
         net.train()
@@ -65,6 +69,9 @@ import NetworkVisual from "../components/NetworkVisual.vue";
             passedNetwork: network
         }
     },
+    components: {
+        networkVisualizer: NetworkVisual
+    },
     methods: {
         step() {
             network.isRunning = true;
@@ -73,8 +80,6 @@ import NetworkVisual from "../components/NetworkVisual.vue";
             for (let i = 0; i < network.xTrain.length; i++) {
                 console.log("given : " + network.xTrain[i] + ", outputted : " + network.predict(network.xTrain[i]));
             }
-
-            networkVisualizer = document.getElementById("networkVisualizer")
             
             for (let i = 0; i < networkVisualizer.layerH1s.length; i++) {
                 networkVisualizer.layerH1s[i].textContent = "im layer " + i;
