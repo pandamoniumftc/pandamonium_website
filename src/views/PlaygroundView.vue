@@ -67,9 +67,6 @@ import NetworkVisual from "../components/NetworkVisual.vue";
             passedNetwork: network
         }
     },
-    components: {
-        networkVisualizer: NetworkVisual
-    },
     methods: {
         step() {
             network.isRunning = true;
