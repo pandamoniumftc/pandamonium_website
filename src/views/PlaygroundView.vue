@@ -58,7 +58,7 @@ import NetworkVisual from "../components/NetworkVisual.vue";
     let hasStartedFlag = false;
 
     let networkVisualizer = document.getElementById("networkVisualizer");
-
+    console.log("visualizer: " + networkVisualizer)
     function train(net) {
         net.train()
     }
@@ -81,10 +81,9 @@ import NetworkVisual from "../components/NetworkVisual.vue";
                 console.log("given : " + network.xTrain[i] + ", outputted : " + network.predict(network.xTrain[i]));
             }
             
-            for (let i = 0; i < networkVisualizer.layerH1s.length; i++) {
-                networkVisualizer.layerH1s[i].textContent = "im layer " + i;
+            for (let i = 0; i < this.networkVisualizer.layerH1s.length; i++) {
+                this.networkVisualizer.layerH1s[i].textContent = "im layer " + i;
             }
-
         },
         start() {
             network.isRunning = true;
