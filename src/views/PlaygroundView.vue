@@ -38,8 +38,6 @@ import NetworkVisual from "../components/NetworkVisual.vue";
 
 <script>
     import NetworkVisual from "../components/NetworkVisual.vue";
-import NetworkVisual from "../components/NetworkVisual.vue";
-import NetworkVisual from "../components/NetworkVisual.vue";
     
     var layers = [
         new Dense(2, 2),
