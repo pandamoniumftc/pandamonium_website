@@ -28,7 +28,7 @@ import NetworkVisual from "../components/NetworkVisual.vue";
             <button @click="pause">Pause</button>
             <button @click="step">Step</button>
         </div>
-        <NetworkVisual :passedNetwork="passedNetwork" :id="networkVisualizer"></NetworkVisual>
+        <NetworkVisual id="networkVisualizer" :passedNetwork="passedNetwork"></NetworkVisual>
 
 
     </section>
